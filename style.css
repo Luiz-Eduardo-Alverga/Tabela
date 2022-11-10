@@ -1,0 +1,51 @@
+input{   
+    width: 22rem;   
+}
+p{
+    width: 10px;
+}
+form{
+    margin-top: 1rem;
+}
+h4{
+    margin: 10px;
+}
+hr{
+    border: dotted black 6px;
+    border-bottom: none;
+    width: 7%;
+    margin: 100px auto;
+}
+.menu{
+    display: flex;
+    text-align: left;
+    justify-content: flex-start;
+    background-color: #00004f;
+    color: #fff;
+    padding: 1rem;
+}
+#btnForm{
+    width: 22rem;
+    border-radius: 0.6rem;
+    background-color: #00004f;
+    color: #fff;
+    height: 2rem;
+    margin-top: 1rem;
+}
+
+#formulario{
+    text-align: center;
+    margin-top: 2rem;   
+}
+.table{
+    margin-top: 3rem;
+    margin-right: 1rem;
+    height: 3rem;
+    background-color: #00004f;  
+    text-align: center;
+    border: 1px solid ;   
+}
+.btnTabela{
+    background-color: black;
+    color: white;
+}
