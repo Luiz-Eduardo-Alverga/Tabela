@@ -5,6 +5,7 @@ export function adicionarLinha(tabela){
     const value4 = Number(nota2.value)
     const value5 = Number(nota3.value)
     const media = (value3 + value4 + value5) / 3
+    const aprovado = (media >= 7) ? "Aprovado" : "Reprovado"
     
     const linha = document.createElement("tr")
 
@@ -15,6 +16,7 @@ export function adicionarLinha(tabela){
     const coluna5 = document.createElement("td")
     const coluna6 = document.createElement("td")
     const coluna7 = document.createElement("td")
+    const coluna8 = document.createElement("td")
 
     const button = document.createElement("button")
     button.setAttribute("class","btnTabela delete")
@@ -26,8 +28,9 @@ export function adicionarLinha(tabela){
     linha.appendChild(coluna4).textContent = value4
     linha.appendChild(coluna5).textContent = value5
     linha.appendChild(coluna6).textContent = media.toFixed(1)
-    coluna7.appendChild(button)
-    linha.appendChild(coluna7)
+    coluna8.appendChild(button)
+    linha.appendChild(coluna7).textContent = aprovado
+    linha.appendChild(coluna8)
       
     tabela.appendChild(linha)
 
